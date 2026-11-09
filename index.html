@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="ActingVibes, un espacio dedicado al teatro,
+          la actuación y la formación artística.">
+    <meta name="keywords"
+          content="ActingVibes, teatro, actuación, casting,
+          talleres, expresión corporal">
+
+    <title>ActingVibes | El talento cobra vida</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+
+<body>
+
+   
+<header>
+    <h1>🎭 ActingVibes</h1>
+    <p>Donde el talento cobra vida</p>
+    <p id="reloj">Cargando hora...</p>
+</header>
+
+
+    
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio">
+            <h2>Bienvenido a ActingVibes</h2>
+
+            <p>
+                En <strong>ActingVibes</strong> creemos
+                que todas las personas tienen
+                una historia que contar.
+            </p>
+
+            <p>
+                Descubre tu talento y desarrolla
+                tus habilidades mediante el
+                <em>arte de la actuación y el teatro.</em>
+            </p>
+
+            <p>
+                <mark>¡El escenario te espera!</mark>
+            </p>
+
+            <a href="#servicios">
+                Conoce nuestros servicios
+            </a>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <div class="servicios-contenedor">
+
+                <article class="tarjeta">
+                    <h3>Actuación teatral</h3>
+                    <p>
+                        Aprende técnicas de interpretación,
+                        creación de personajes y expresión
+                        escénica.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Preparación para castings</h3>
+                    <p>
+                        Desarrolla tu seguridad y aprende
+                        a prepararte para audiciones
+                        profesionales.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Expresión corporal</h3>
+                    <p>
+                        Mejora tu comunicación mediante
+                        el movimiento, la improvisación
+                        y las emociones.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section id="nosotros">
+            <h2>Sobre nosotros</h2>
+
+            <article>
+                <h3>¿Quiénes somos?</h3>
+                <p>
+                    ActingVibes es un espacio artístico
+                    dedicado a impulsar el talento
+                    de las personas apasionadas por
+                    la actuación y el teatro.
+                </p>
+            </article>
+
+            <article>
+                <h3>Misión</h3>
+                <p>
+                    Brindar herramientas y conocimientos
+                    que permitan desarrollar habilidades
+                    artísticas y personales.
+                </p>
+            </article>
+
+            <article>
+                <h3>Visión</h3>
+                <p>
+                    Ser una comunidad reconocida por
+                    formar artistas creativos, seguros
+                    y comprometidos con el teatro.
+                </p>
+            </article>
+
+            <article>
+                <h3>Valores</h3>
+                <ul>
+                    <li>Creatividad</li>
+                    <li>Respeto</li>
+                    <li>Disciplina</li>
+                    <li>Pasión</li>
+                    <li>Trabajo en equipo</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- INFORMACIÓN ADICIONAL -->
+        <aside>
+            <h3>¡Atrévete a actuar!</h3>
+            <p>
+                No necesitas experiencia previa
+                para comenzar tu camino artístico.
+            </p>
+        </aside>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+
+            <p>
+                Completa el formulario para solicitar
+                información sobre nuestros talleres.
+            </p>
+
+            <form action="#" method="POST">
+
+                <label for="nombre">
+                    Nombre completo:
+                </label>
+                <input type="text"
+                       id="nombre"
+                       name="nombre"
+                       required>
+
+                <br><br>
+
+                <label for="correo">
+                    Correo electrónico:
+                </label>
+                <input type="email"
+                       id="correo"
+                       name="correo"
+                       required>
+
+                <br><br>
+
+                <label for="telefono">
+                    Teléfono:
+                </label>
+                <input type="tel"
+                       id="telefono"
+                       name="telefono"
+                       required>
+
+                <br><br>
+
+                <label for="servicio">
+                    Servicio de interés:
+                </label>
+                <select id="servicio"
+                        name="servicio"
+                        required>
+                    <option value="">
+                        Selecciona un servicio
+                    </option>
+                    <option value="actuacion">
+                        Actuación teatral
+                    </option>
+                    <option value="casting">
+                        Preparación para castings
+                    </option>
+                    <option value="expresion">
+                        Expresión corporal
+                    </option>
+                </select>
+
+                <br><br>
+
+                <label for="mensaje">
+                    Mensaje:
+                </label>
+                <textarea id="mensaje"
+                          name="mensaje"
+                          rows="5"
+                          required></textarea>
+
+                <br><br>
+
+                <button type="submit">
+                    Enviar solicitud
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>
+            <small>
+                &copy; 2026 ActingVibes.
+                Todos los derechos reservados.
+            </small>
+        </p>
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

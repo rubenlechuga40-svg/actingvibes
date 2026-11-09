@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f7f2f6;
+    color: #292032;
+    line-height: 1.7;
+}
+
+
+header {
+    background: linear-gradient(
+        135deg,
+        #21162d,
+        #74344f
+    );
+
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #f4d8a1;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.3rem;
+    margin-top: 12px;
+    color: #f7e7ed;
+}
+
+
+nav {
+    background-color: #21162d;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #d3a965;
+    color: #21162d;
+    transform: translateY(-3px);
+    outline: 2px solid transparent;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+section {
+    margin-bottom: 35px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    scroll-margin-top: 90px;
+}
+
+section h2 {
+    color: #74344f;
+    font-size: 2rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+#inicio {
+    background: linear-gradient(
+        135deg,
+        #21162d,
+        #74344f
+    );
+
+    color: white;
+    text-align: center;
+    padding: 75px 30px;
+    min-height: 400px;
+}
+
+#inicio h2 {
+    color: #f4d8a1;
+    font-size: 2.7rem;
+}
+
+#inicio p {
+    font-size: 1.15rem;
+    max-width: 750px;
+    margin: 18px auto;
+}
+
+#inicio mark {
+    background-color: #d3a965;
+    color: #21162d;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+
+
+.boton,
+#inicio a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background-color: #d3a965;
+    color: #21162d;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.boton:hover,
+#inicio a:hover {
+    background-color: #f4d8a1;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+#inicio a:focus {
+    outline: 3px solid white;
+}
+
+
+
+#servicios {
+    text-align: center;
+}
+
+.servicios-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: #f9f4f7;
+    width: 280px;
+    padding: 25px;
+    margin: 10px;
+    border: 1px solid #e6d6df;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.tarjeta h3 {
+    color: #74344f;
+    font-size: 1.3rem;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    color: #514453;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+    border-color: #d3a965;
+}
+
+
+#nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#nosotros h2 {
+    grid-column: 1 / -1;
+}
+
+#nosotros article {
+    padding: 25px;
+    background-color: #f9f4f7;
+    border-left: 5px solid #74344f;
+    border-radius: 12px;
+}
+
+#nosotros article h3 {
+    color: #74344f;
+    margin-top: 0;
+}
+
+#nosotros ul {
+    padding-left: 25px;
+}
+
+
+aside {
+    background: linear-gradient(
+        120deg,
+        #74344f,
+        #42243e
+    );
+    color: white;
+    text-align: center;
+    padding: 35px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+}
+
+aside h3 {
+    color: #f4d8a1;
+    font-size: 1.6rem;
+}
+
+
+#contacto {
+    text-align: center;
+}
+
+#contacto form {
+    max-width: 650px;
+    margin: 30px auto 0;
+    padding: 30px;
+    background-color: #f9f4f7;
+    border-radius: 15px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    color: #42243e;
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c7b7c4;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: white;
+    color: #292032;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 2px solid #74344f;
+    border-color: #74344f;
+    box-shadow: 0 0 8px rgba(116,52,79,0.18);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+
+form button {
+    background-color: #74344f;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #42243e;
+    transform: scale(1.05);
+}
+
+form button:focus {
+    outline: 3px solid #d3a965;
+}
+
+
+footer {
+    background-color: #21162d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px 15px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    #inicio {
+        padding: 45px 20px;
+        min-height: auto;
+    }
+
+    #inicio h2 {
+        font-size: 2rem;
+    }
+
+    .servicios-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
+        margin: 5px 0;
+    }
+
+    #nosotros {
+        grid-template-columns: 1fr;
+    }
+
+    #contacto form {
+        padding: 20px;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    
+
+#reloj {
+    color: #f4d8a1;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+}
